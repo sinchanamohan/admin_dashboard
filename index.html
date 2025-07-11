@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Admin</h2>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Users</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Dashboard</h1>
+        <div class="actions">
+          <button onclick="toggleTheme()">🌓</button>
+          <div class="user-info">👤 Admin</div>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card">Total Users<br><strong>1,240</strong></div>
+        <div class="card">Revenue<br><strong>$12,500</strong></div>
+        <div class="card">Orders<br><strong>312</strong></div>
+      </section>
+
+      <section class="charts">
+        <canvas id="lineChart"></canvas>
+        <canvas id="barChart"></canvas>
+      </section>
+
+      <section class="transactions">
+        <h2>Recent Transactions</h2>
+        <table>
+          <thead>
+            <tr><th>Date</th><th>Description</th><th>Amount</th><th>Status</th></tr>
+          </thead>
+          <tbody id="transactionTable"></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+[
+  { "date": "2025-07-01", "description": "Order #1023", "amount": "$125.00", "status": "Completed" },
+  { "date": "2025-07-02", "description": "Order #1024", "amount": "$98.50", "status": "Pending" },
+  { "date": "2025-07-03", "description": "Order #1025", "amount": "$560.00", "status": "Completed" }
+]
